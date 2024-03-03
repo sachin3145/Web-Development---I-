@@ -1,0 +1,112 @@
+/* External Stylesheet */
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  color: #4285f4;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #ff9900;
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+h4+ul {
+  margin-top: 10px;
+}
+
+.float-example {
+  float: right;
+  margin-right: 20px;
+}
+
+.container {
+  border: #1a0dab dashed 3px;
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#burger-image {
+  border: 2px solid #ff9900;
+  max-height: 100%;
+  width: auto;
+  margin: 2vh;
+}
+
+.grid-container {
+  margin: 2vh;
+  border: #ff9900 1px solid;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ff0000;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+
+  .container{
+    flex-direction: column;
+    padding-top: 2vh;
+  }
+  .grid-container {
+    margin: 2vh;
+  }
+}
+
+a.hover-effect {
+  transition: color 0.3s ease-in-out;
+}
+
+a.hover-effect:hover {
+  color: #ff0000;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-animation {
+  animation: slide 1s ease-in-out;
+}
