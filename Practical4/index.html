@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  <body>
+    <form id="login">
+      <label>Username: </label><input id="username" type="text" /> 
+      <label>Password: </label><input id="password" type="password" />
+        <input style="margin-top: 1em; margin-right: auto;" type="button" id="go-to-register" value="Register"/>
+        <input style="margin-top: 1em; " id="login-button" type="submit" value="Login" />
+      </form>
+    <form id="register" style="display: none;">
+      <label>Name: </label><input id="name" type="text" />
+      <label>Roll Number: </label><input id="roll" type="text" />
+      <label>E-mail: </label><input id="mail" type="text" />
+      <label>Age: </label><input id="age" type="text" />
+      <label>Gender: </label>
+      <div id="gender-box">
+      <div><input type="radio" name="gender"  id="Male" value="Male" /><label>Male</label></div>
+      <div><input type="radio" name="gender" id="Female" value="Female" /><label>Female</label></div>
+      <div><input type="radio" name="gender" id="not-disclosed" value="Prefer not to say" /><label>Prefer not to say</label></div>
+      </div>
+      <label>Course: </label
+      ><select name="">
+        <option value="">B.Tech</option>
+        <option value="">M.Tech</option>
+        <option value="">BCA</option>
+        <option value="">MCA</option></select
+      >
+      <label>Address: </label
+      ><textarea name="" cols="30" rows="10"></textarea>
+      <label>Photo: </label><input id="file" type="file" /><br />
+      <div>
+        <button id="back-to-login">Back to Login</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
