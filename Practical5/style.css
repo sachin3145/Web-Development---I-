@@ -1,0 +1,153 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+/* dropdown menu */
+#menu{
+  width: 95;
+  margin-left: 20px;
+}
+
+.dropdown {
+  position: relative;
+  font-size: x-large;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  font-size: medium;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* image gallery */
+#image-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 95;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 95;
+}
+
+.thumbnail {
+  border: 2px solid black;
+  width: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.thumbnail:hover {
+  opacity: 0.7;
+}
+
+.main-image {
+  border: 2px solid black;
+  max-width: 500px;
+  margin-top: 20px;
+}
+/* FAQ section */
+#FAQ-section{
+  display: none;
+  width: 95;
+  margin-top: 25vh;
+}
+
+.faq{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin: auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.question {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding-left: 20px;
+}
+
+.question::after {
+  content: "+";
+  float: right;
+  transition: transform 0.3s;
+}
+
+.question.active::after {
+  content: "-";
+  transform: rotate(180deg);
+}
+
+/* task board  */
+
+#task-board{
+  display: none;
+  width: 95;
+}
+
+.task-board {
+  width: 80%;
+  margin: auto;
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-column {
+  flex: 1;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.task:hover {
+  background-color: #f0f0f0;
+}

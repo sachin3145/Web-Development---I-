@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <section id="menu">
+    <div class="dropdown">
+      <span>Menu</span>
+      <div class="dropdown-content">
+        <a href="#" id="show-gallery">Image Gallery</a>
+        <a href="#" id="show-FAQ">FAQ Section</a>
+        <a href="#" id="show-taskboard">Task Board</a>
+      </div>
+    </div>
+    </section>
+    <section id="image-gallery">
+      <img class="main-image" id="mainImage" src="1.png" alt="Main Image" />
+      <div class="gallery">
+        <img
+          class="thumbnail"
+          src="1.png"
+          alt="Thumbnail 1"
+          onclick="showImage('1.png')"
+        />
+        <img
+          class="thumbnail"
+          src="2.png"
+          alt="Thumbnail 2"
+          onclick="showImage('2.png')"
+        />
+        <img
+          class="thumbnail"
+          src="3.png"
+          alt="Thumbnail 3"
+          onclick="showImage('3.png')"
+        />
+        <img
+          class="thumbnail"
+          src="4.png"
+          alt="Thumbnail 3"
+          onclick="showImage('4.png')"
+        />
+      </div>
+      
+    </section>
+    <section id="FAQ-section">
+      <div class="faq" id="faq">
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(1)">Was it fun?</div>
+          <div class="answer" id="answer1">Sure Was</div>
+        </div>
+        <div class="faq-item">
+          <div class="question" onclick="toggleAnswer(2)">Who are you?</div>
+          <div class="answer" id="answer2">I'm Batman</div>
+        </div>
+      </div>
+    </section>
+    <section id="task-board">
+      <div class="task-board">
+        <div class="task-column" id="todo">
+          <h3>To Do</h3>
+          <div class="task" draggable="true">Assignment</div>
+          <div class="task" draggable="true">Study</div>
+          <div class="task" draggable="true">Gym</div>
+          <div class="task" draggable="true">Anime</div>
+          <div class="task" draggable="true">Sports</div>
+        </div>
+        <div class="task-column" id="inprogress">
+          <h3>In Progress</h3>
+        </div>
+        <div class="task-column" id="done">
+          <h3>Done</h3>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
