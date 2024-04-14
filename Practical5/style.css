@@ -1,11 +1,12 @@
-html, body{
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: monospace;
 }
 
 /* dropdown menu */
-#menu{
+#menu {
   width: 95;
   margin-left: 20px;
 }
@@ -75,13 +76,13 @@ html, body{
   margin-top: 20px;
 }
 /* FAQ section */
-#FAQ-section{
+#FAQ-section {
   display: none;
   width: 95;
   margin-top: 25vh;
 }
 
-.faq{
+.faq {
   display: flex;
   width: 80%;
   flex-direction: column;
@@ -118,7 +119,7 @@ html, body{
 
 /* task board  */
 
-#task-board{
+#task-board {
   display: none;
   width: 95;
 }
