@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical 6</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="./logo.svg" height="50px" />
+      <label id="showNav">&#9776;</label>
+      <nav>
+        <a href="#" id="showFlex">Flexbox</a>
+        <a href="#" id="showGrid">Grid</a>
+        <a href="#" id="showAnimation">Animations</a>
+      </nav>
+    </header>
+    <main>
+      <section id="flex" title="flexbox card layout">
+        <div class="card">
+          <img src="moltres.png" alt="moltres" />
+          <h2>Moltres</h2>
+          <p>Fire / Flying</p>
+        </div>
+        <div class="card">
+          <img src="articuno.png" alt="articuno" />
+          <h2>Articuno</h2>
+          <p>Ice / Flying</p>
+        </div>
+        <div class="card">
+          <img src="zapdos.png" alt="zapdos" />
+          <h2>Zapdos</h2>
+          <p>Electric / Flying</p>
+        </div>
+      </section>
+      <section id="grid" title="grid pricing table">
+        <div class="plan-details plan">
+          <h2>Features</h2>
+          <ul style="text-align: left">
+            <li>Starter Pokemon</li>
+            <li>Pokeballs</li>
+            <li>Gym Battles</li>
+            <li>Trainer Battles</li>
+            <li>Legendary Pokemons</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h2>Basic</h2>
+          <ul>
+            <li>&#10004;</li>
+            <li>12 per day</li>
+            <li>&#10008;</li>
+            <li>&#10008;</li>
+            <li>&#10008;</li>
+          </ul>
+          <span class="price">$5/month</span>
+        </div>
+        <div class="plan">
+          <h2>Standard</h2>
+          <ul>
+            <li>&#10004;</li>
+            <li>Unlimited</li>
+            <li>2 per day</li>
+            <li>&#10008;</li>
+            <li>&#10008;</li>
+          </ul>
+          <span class="price">$20/month</span>
+        </div>
+        <div class="plan">
+          <h2>Premium</h2>
+          <ul>
+            <li>&#10004;</li>
+            <li>Unlimited</li>
+            <li>5 per day</li>
+            <li>&#10004;</li>
+            <li>&#10004;</li>
+          </ul>
+          <span class="price">$50/month</span>
+        </div>
+      </section>
+      <section id="animation" title="animations">
+        <div class="cube">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face right"></div>
+          <div class="face left"></div>
+          <div class="face top"></div>
+          <div class="face bottom"></div>
+        </div>
+        <h2>tesseract</h2>
+      </section>
+    </main>
+  </body>
+</html>
